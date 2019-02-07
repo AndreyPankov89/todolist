@@ -30,7 +30,7 @@ const TodoList = ({items, doneSwitch, toggle}) => {
     
     let list = items;
     if (doneSwitch) {
-        debugger;
+   
         list = items.filter((item) => {
             return !item.done
         })

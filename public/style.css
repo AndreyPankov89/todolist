@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'roboto', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(180deg, #CA94FF 0%, rgba(70, 6, 134, 0.81) 100%);
+}
+.task-manager {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 650px;
+  min-height: 300px;
+  background: rgba(255, 255, 255, 0.67);
+  border-radius: 8px;
+  padding: 25px 50px;
+}
+.todo-list {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+.todo-list li {
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+}
+.todo-list li:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 60px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.todo-list .complited {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: line-through;
+}
+.add-form-btns {
+  display: flex;
+  justify-content: space-around;
+}
+.add-task {
+  display: block;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+}
+.btn {
+  width: 133px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.btn_orange {
+  background: #FFE482;
+}
